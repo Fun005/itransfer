@@ -122,7 +122,7 @@
                     var classNames = that.checkTagClass($(this));
 
                     if($(this).prop("checked") == true){
-                        checkBoxs.attr("checked","checked");
+                        checkBoxs.prop("checked","checked");
                         that.removeActiveEvent(classNames[0],"disabled");
                         that.addActiveEvent(classNames[0],"active");
                         if(!$("."+classNames[1]).hasClass("active")){
